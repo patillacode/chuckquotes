@@ -1,11 +1,14 @@
 import argparse
-import logging
 import json
+import logging
+import random
 import sys
 import traceback
 
-from flask import Flask
 from chucklib.quotes import quote_chuck_norris
+from flask import Flask
+from flask import render_template
+from os import listdir
 
 logging.basicConfig(filename='log/chuck.log',
                     level=logging.INFO,
@@ -24,11 +27,29 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 
+def get_random_background():
+    return "background-{0}".format(
+        random.randrange(len(listdir("static/chuckpics"))) + 1)
+
+
+@app.route("/api")
+def api():
+    try:
+        logger.info("Another API request for an awesome quote has been made!")
+        return json.dumps({"quote": unicode(quote_chuck_norris())}), 200
+    except:
+        logger.error(traceback.format_exc())
+        return json.dumps(
+            {"error": "Sorry, something bad happened with your request."}), 500
+
+
 @app.route("/")
 def main():
     try:
-        logger.info("Another request for an awesome quote has been made!")
-        return json.dumps({"quote": unicode(quote_chuck_norris())}), 200
+        logger.info("Another WEB request for an awesome quote has been made!")
+        return render_template('index.html',
+                               quote=unicode(quote_chuck_norris()),
+                               background=get_random_background())
     except:
         logger.error(traceback.format_exc())
         return json.dumps(

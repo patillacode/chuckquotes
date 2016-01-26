@@ -1,6 +1,8 @@
 # randomchuck
-Flask-Python server that returns a random json formatted Chuck Norris quote on request.
+An API that returns a random json formatted Chuck Norris quote on request.
+And a WEB that renders a random json formatted Chuck Norris quote on request.
 
+Developed with Flask/Python
 
 ## Install
 `pip install -r requirements`

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Chuck Norris - random quote">
+        <meta name="keywords" content="Chuck Norris, random quote">
+        <meta name="author" content="Patilla Code">
+        <title>RandomChuck</title>
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chuck.css') }}">
+    </head>
+    <body class="{{ background }}">
+        <!--
+        <div class="container">
+            <div id="header" class="header clear-fix">
+                <p class="text-center">
+                    <a href="http://{{ request.host }}" class="pimpositor-font">RandomChuck</a>
+                </p>
+            </div>
+        </div>
+        -->
+        <div id="container">
+            <hr>
+            <p id="quote">{{ quote }}</p>
+            <hr>
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <!--
+        <script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap-filestyle-1.2.1/src/bootstrap-filestyle.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+         -->
+    </body>
+</html>

@@ -1,0 +1,56 @@
+#quote {
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 0 0 #000,
+                 -2px 0 0 #000,
+                 0 2px 0 #000,
+                 0 -2px 0 #000,
+                 1px 1px #000,
+                 -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000;
+    color: #fff;
+}
+
+#container {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 30%;
+    width: 40%;
+}
+
+.background-1 {
+    background: url(../chuckpics/1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.background-2 {
+    background: url(../chuckpics/2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.background-3 {
+    background: url(../chuckpics/3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.background-4 {
+    background: url(../chuckpics/4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.background-5 {
+    background: url(../chuckpics/5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
