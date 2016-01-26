@@ -57,6 +57,6 @@ if __name__ == '__main__':
         app.run(host=args.host, port=args.port)
 
     except SystemExit:
-        pass
+        logger.info("Farewell!")
     except:
         logger.error(traceback.format_exc())
