@@ -12,7 +12,7 @@ import random
 
 def quote_chuck_norris():
     quotes = []
-    for q in open('src/quotes.txt'):
+    for q in open('chucklib/quotes.txt'):
         quotes.append(q.replace('\n', ''))
     return random.choice(quotes)
 

@@ -5,7 +5,7 @@ import sys
 import traceback
 
 from flask import Flask
-from src.quotes import quote_chuck_norris
+from chucklib.quotes import quote_chuck_norris
 
 logging.basicConfig(filename='log/chuck.log',
                     level=logging.INFO,
@@ -37,7 +37,7 @@ def main():
 
 class ChuckParser(argparse.ArgumentParser):
     def error(self, message):
-        sys.stderr.write('error: %s\n' % message)
+        sys.stderr.write('error: {0}\n'.format(message))
         self.print_help()
         sys.exit(2)
 
