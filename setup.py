@@ -10,7 +10,7 @@ def required(fname):
 
 setup(
     name='randomchuck',
-    version='0.0.0',
+    version='0.1.0',
     description="Flask-Python server that returns a random json formatted \
                  Chuck Norris quote on request.",
     long_description="",
