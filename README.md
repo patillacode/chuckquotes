@@ -1,4 +1,4 @@
-# randomchuck
+# chuckquotes
 An API that returns a random json formatted Chuck Norris quote on request.
 And a WEB that renders a random json formatted Chuck Norris quote on request.
 
