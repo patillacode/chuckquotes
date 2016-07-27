@@ -8,11 +8,15 @@ Prints a random Chuck Norris quote.
 """
 
 import random
+import os
 
 
 def quote_chuck_norris():
     quotes = []
-    for q in open('chucklib/quotes.txt'):
+    file_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        ('quotes.txt'))
+    for q in open(file_path):
         quotes.append(q.replace('\n', ''))
     return random.choice(quotes)
 
