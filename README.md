@@ -17,4 +17,4 @@ Developed with Flask/Python
 `python random_chuck_server.py -h --port PORT --host HOST`
 
 ## Test
-`curl -i -X GET http://127.0.0.1:8080/`
+`curl -i -X GET http://127.0.0.1:9090/`
