@@ -1,6 +1,7 @@
 import argparse
 import json
 import logging
+import os
 import random
 import sys
 import traceback
@@ -34,8 +35,11 @@ app = Flask(__name__)
 
 
 def get_random_background():
+    dir_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        ('static/chuckpics'))
     return "background-{0}".format(
-        random.randrange(len(listdir("static/chuckpics"))) + 1)
+        random.randrange(len(listdir(dir_path))) + 1)
 
 
 @app.route("/api")
