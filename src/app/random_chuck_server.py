@@ -10,10 +10,16 @@ from flask import Flask
 from flask import render_template
 from os import listdir
 
-logging.basicConfig(filename='log/chuck.log',
-                    level=logging.INFO,
+
+logging.basicConfig(stream=sys.stdout,
+                    level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(message)s',
                     handlers=[logging.StreamHandler()])
+
+# logging.basicConfig(filename='log/chuck.log',
+#                     level=logging.INFO,
+#                     format='%(asctime)s %(levelname)s %(message)s',
+#                     handlers=[logging.StreamHandler()])
 
 # set up logging to console
 console = logging.StreamHandler()
