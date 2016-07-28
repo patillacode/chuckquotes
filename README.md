@@ -2,9 +2,9 @@
 An API that returns a random json formatted Chuck Norris quote on request.
 And a WEB that renders a random json formatted Chuck Norris quote on request.
 
-[Web Demo](http://chuckquotes-patillacode.rhcloud.com/)
+[Web Demo](http://chucknorris.patilla.es)
 
-[API Demo](http://chuckquotes-patillacode.rhcloud.com/api)
+[API Demo](http://chucknorris.patilla.es/api)
 
 Developed with Flask/Python
 
