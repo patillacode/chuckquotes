@@ -6,12 +6,10 @@
         <meta name="description" content="Chuck Norris - random quote">
         <meta name="keywords" content="Chuck Norris, random quote">
         <meta name="author" content="Patilla Code">
-        <title>RandomChuck</title>
+        <title>Chuck's Quotes</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/chuck.css') }}">
     </head>
     <body class="{{ background }}">
-        <div id="container">
-            <p id="quote">{{ quote }}</p>
-        </div>
+        <header><p class="quote">{{ quote }}</p></header>
     </body>
 </html>

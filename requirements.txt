@@ -1,2 +1,2 @@
-bumpversion==0.5.3
-Flask==0.10.1
+Flask==1.1.2
+waitress==2.0.0

@@ -1,9 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-#quote {
+html {
+  height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+
+}
+
+.quote {
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
     text-align: center;
     margin: 0;
     color: #fff;
-    font-size: 2.4vh;
+    font-size: 21pt;
     text-shadow: 2px 0 0 #000,
                  -2px 0 0 #000,
                  0 2px 0 #000,
@@ -12,18 +34,6 @@
                  -1px -1px 0 #000,
                  1px -1px 0 #000,
                  -1px 1px 0 #000;
-}
-
-#container {
-    position: fixed; /* or absolute */
-    top: 50%;
-    left: 30%;
-    width: 40%;
-    /*background-color: rgba(200, 200, 200, 0.3);*/
-}
-
-body {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .background-1 {
